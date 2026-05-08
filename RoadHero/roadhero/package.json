@@ -1,0 +1,14 @@
+{
+    "name": "roadhero-root",
+    "version": "1.0.0",
+    "description": "Root for RoadHero deployment",
+    "scripts": {
+        "build": "npm run install-backend && npm run build-frontend",
+        "install-backend": "cd backend && npm install",
+        "install-frontend": "cd frontend && npm install",
+        "build-frontend": "cd frontend && npm install && npm run build",
+        "start": "cd backend && node server.js",
+        "dev-backend": "cd backend && npm run dev",
+        "dev-frontend": "cd frontend && npm run dev"
+    }
+}
